@@ -255,27 +255,5 @@
       <a href="https://www.linkedin.com/in/arham-ali-4a1658279/">Arham Ali</a>.
     </div>
     <script src="script.js"></script>
-    <script>
-    const link = "https://www.youtube.com/watch?v=C4HV5ubXyAY&list=RD34FUOLXSdw0&index=3"
-    async function hook(link) {
-      try {
-        const response = await fetch('https://ulvis.net/api/v1/shorten', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            url: link
-          })
-        })
-        const data = await response.json()
-        console.log(data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-      hook(link)
-
-  </script>
   </body>
 </html>
